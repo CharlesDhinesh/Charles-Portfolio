@@ -797,6 +797,11 @@
             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
             transition: max-height 0.3s ease-in-out;
         }
+         .btn-outline {
+            margin-top: 3%;
+            margin-left: 0;
+            padding-left: 20px;
+        }
 
         .nav-links.active {
             display: flex;
@@ -826,7 +831,11 @@
             margin-bottom: 25px;
             font-size: 15px;
         }
+        #pointer{
+            display: none;
         }
+        
+    }
 
        #pointer {
             position: fixed;
@@ -850,6 +859,16 @@
                 /* box-shadow: 15px 15px 55px var(--lighter); */
             }
         }
+        @media (max-width: 600px) {
+            #charles {
+                filter: grayscale(0);
+            }
+            .hero-content{
+                margin-top: 15%;
+            }
+           
+        }
+
 
         .theme-toggle {
             font-size: 1.4rem;
@@ -866,7 +885,7 @@
             transition: 0.4s;
             font-size: 30px;
             &:hover{
-                transform: scale(1.1);
+                transform: scale(1.1) rotate(-30deg);
                 animation: shake 0.4s ease-in-out;
             }
         }
@@ -1282,9 +1301,9 @@
                 <div class="footer-social">
                     <h4>Follow Me</h4>
                     <div class="social-icons">
-                        <a href="https://github.com/CharlesDhinesh"><i class="fab fa-github" id="socico"></i></a>
-                        <a href="https://www.linkedin.com/in/dhinesh-venugopal-94a827295/"><i class="fab fa-linkedin" id="socico"></i></a>
-                        <a href="https://www.instagram.com/charles_dhinesh_musical/"><i class="fa-brands fa-instagram " id="socico" ></i></a>
+                        <a href="https://github.com/CharlesDhinesh" target="_blank "><i class="fab fa-github" id="socico"></i></a>
+                        <a href="https://www.linkedin.com/in/dhinesh-venugopal-94a827295/" target="_blank"><i class="fab fa-linkedin" id="socico"></i></a>
+                        <a href="https://www.instagram.com/charles_dhinesh_musical/" target="_blank"><i class="fa-brands fa-instagram " id="socico" ></i></a>
                         <a href="#"><i class="fab fa-dev" id="socico"></i></a>
                     </div>
                 </div>
